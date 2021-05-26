@@ -24,7 +24,11 @@ public class UserController {
     @GetMapping(value = "/")
     public String showIndex(Model model, HttpServletRequest request) {
         String host = request.getHeader("host");
-        name = host.substring(0, host.indexOf("."));
+        if(host.indexOf(".") < 0){
+            name = "local";
+        }else{
+            name = host.substring(0, host.indexOf("."));
+        }
         model.addAttribute("userName", name);
        
         return "index";
@@ -34,7 +38,11 @@ public class UserController {
     public String submitIndex(Model model, HttpServletRequest request, @ModelAttribute("code") String code) {        
         try {
             String host = request.getHeader("host");
-            name = host.substring(0, host.indexOf("."));
+            if(host.indexOf(".") < 0){
+                name = "local";
+            }else{
+                name = host.substring(0, host.indexOf("."));
+            }
             model.addAttribute("userName", name);
             userService.checkCode(code);
             this.code = code;
@@ -58,7 +66,11 @@ public class UserController {
     public String submitForm(Model model, HttpServletRequest request, @ModelAttribute("user") User user, @RequestParam("status") String status) {        
         try {
             String host = request.getHeader("host");
-            name = host.substring(0, host.indexOf("."));
+            if(host.indexOf(".") < 0){
+                name = "local";
+            }else{
+                name = host.substring(0, host.indexOf("."));
+            }
             user.setName(name);
             user.setStatus(status);
             user.setCode(this.code);
@@ -82,7 +94,11 @@ public class UserController {
     @GetMapping(value = {"/test"})
     public String showTestFile(Model model, HttpServletRequest request){
         String host = request.getHeader("host");
-        name = host.substring(0, host.indexOf("."));
+        if(host.indexOf(".") < 0){
+            name = "local";
+        }else{
+            name = host.substring(0, host.indexOf("."));
+        }
         model.addAttribute("name", this.name);
         return "testfile";
     }
