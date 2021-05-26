@@ -1,4 +1,4 @@
-package com.sded.landmanagement.service;
+package com.opendoors.landmanagement.service;
 
 import java.io.BufferedReader;
 import java.io.DataOutputStream;

@@ -1,4 +1,4 @@
-package com.sded.landmanagement;
+package com.opendoors.landmanagement;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

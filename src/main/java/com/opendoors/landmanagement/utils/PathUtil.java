@@ -1,4 +1,4 @@
-package com.sded.landmanagement.utils;
+package com.opendoors.landmanagement.utils;
 
 import java.io.File;
 

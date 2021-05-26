@@ -1,10 +1,10 @@
-package com.sded.landmanagement.controller;
+package com.opendoors.landmanagement.controller;
 
 
 import javax.servlet.http.HttpServletRequest;
 
-import com.sded.landmanagement.domain.User;
-import com.sded.landmanagement.service.UserService;
+import com.opendoors.landmanagement.domain.User;
+import com.opendoors.landmanagement.service.UserService;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

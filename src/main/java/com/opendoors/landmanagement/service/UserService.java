@@ -1,8 +1,8 @@
-package com.sded.landmanagement.service;
+package com.opendoors.landmanagement.service;
 
 import java.net.URLEncoder;
 
-import com.sded.landmanagement.domain.User;
+import com.opendoors.landmanagement.domain.User;
 
 import org.springframework.stereotype.Service;
 

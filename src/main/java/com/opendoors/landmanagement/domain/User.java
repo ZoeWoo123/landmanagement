@@ -1,4 +1,4 @@
-package com.sded.landmanagement.domain;
+package com.opendoors.landmanagement.domain;
 
 
 
