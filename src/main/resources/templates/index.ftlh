@@ -7,14 +7,14 @@
     </head>
     <body style="background-color:#19875440;">
         <div class="px-4 pt-5 my-5" >
-            <h1 class="display-1 text-center">Welcome ${userName}!</h1>
+            <h1 class="display-1 text-center">Welcome!</h1>
             <div class="border shadow-lg px-5 py-3 my-5 mx-auto col-lg-4 col-md-8" style="background-color:#dee2e6c7;">
-                <form class="ml-5" action="/" name="user" method="POST">
+                <form class="ml-5" action="/" name="seqNbr" method="POST">
                     <div class="my-3">
-                        <h3>Please enter the Interest Code on the postcard: </h3>
-                        <input type="text" class="form-control " id="InputCode"  name="code" value="${(user.code)!''}" />
+                        <h3>Please enter seqNbr to create contract </h3>
+                        <input type="text" class="form-control" seqNbr="seqNbr"  name="seqNbr" value="${(seqNbr)!''}" />
                     </div>
-                    <input class="btn btn-primary mt-3" type="submit" value="Submit">
+                    <input class="btn btn-primary mt-3" type="submit" value="Start">
                 </form>
                 <br/>
 

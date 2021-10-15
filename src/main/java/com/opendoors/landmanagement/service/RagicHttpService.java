@@ -20,6 +20,8 @@ public class RagicHttpService {
             url += "?" + query;
         else
             url += "&" + query;
+        url += "&v=3&api";
+        System.out.println("url" + url);
         URL obj = new URL(url);
         HttpURLConnection conn = (HttpURLConnection) obj.openConnection();
 

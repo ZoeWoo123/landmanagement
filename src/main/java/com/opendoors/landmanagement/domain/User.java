@@ -4,12 +4,18 @@ package com.opendoors.landmanagement.domain;
 
 public class User {
     private String email;
-    private String code;
     private String name;
     private String phone;
     private String status;
     private String message;
+    private String code;
     
+    public String getCode() {
+        return code;
+    }
+    public void setCode(String code) {
+        this.code = code;
+    }
     public String getPhone() {
         return phone;
     }
@@ -34,12 +40,6 @@ public class User {
     public void setEmail(String email) {
         this.email = email;
     }
-    public String getCode() {
-        return code;
-    }
-    public void setCode(String code) {
-        this.code = code;
-    }
     public String getName() {
         return name;
     }
@@ -51,6 +51,7 @@ public class User {
         return "User [code=" + code + ", email=" + email + ", message=" + message + ", name=" + name + ", phone="
                 + phone + ", status=" + status + "]";
     }
+    
     
     
 }
